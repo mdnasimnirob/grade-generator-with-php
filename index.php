@@ -23,7 +23,6 @@ if (isset($_POST["submit"])) {
     } else {
         $result = "invalid ! please write number";
     }
-
 }
 ?>
 
@@ -43,20 +42,17 @@ if (isset($_POST["submit"])) {
 <body>
     <header></header>
     <main class="lg:container mx-auto flex flex-col mt-3 gap-1">
-
         <section
             class="border-blue-300 border lg:w-4/12 mx-auto flex justify-center items-center rounded-t-lg shadow-md">
             <div
                 class="flex items-center justify-center text-center text-lg font-semibold text-black rounded-sm bg-slate-100 shadow-2xl border-white lg:px-2 md:p-1 ">
                 <h3 class="">Simple Grade Calculator</h3>
             </div>
-
         </section>
 
         <section>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <label class="input input-bordered mx-auto flex lg:w-4/12 w-2/3 items-center gap-2 shadow-2xl">
-
                     <input type="text" name="name" class="grow" placeholder="Search" required />
                     <button type="submit" name="submit"><svg class="w-4 opacity-70 " xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -67,7 +63,6 @@ if (isset($_POST["submit"])) {
                 <div class="text-center  ">
                     <h2><?php
                     echo "<div>Your search this is: $grade</div>"
-
                         ?></h2>
                 </div>
             </form>
@@ -79,8 +74,6 @@ if (isset($_POST["submit"])) {
                 </div>
             <?php endif; ?>
         </section>
-
-
     </main>
     <footer class=""></footer>
 </body>
